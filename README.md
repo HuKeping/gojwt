@@ -1,1 +1,3 @@
-Gojwt is an lightweight JWT server written by Golang.
+## WIP
+
+Gojwt is a stupid lightweight JWT server written by Golang.
