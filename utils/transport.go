@@ -3,7 +3,7 @@
 // license that can be found in the LICENSE file.
 
 // Package internal contains support packages for oauth2 package.
-package internal
+package utils
 
 import (
 	"net/http"
