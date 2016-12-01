@@ -1,7 +1,17 @@
 language: go
+sudo: false
 
-go:
-        - 1.7
-        - master
+matrix:
+  include:
+    - go: 1.6
+    - go: 1.7
+    - go: tip
+
+install:
+  - # Skip
+
 script:
-        - go test
+  - go get -t -v ./...
+  - diff -u <(echo -n) <(gofmt -d .)
+  - go tool vet .
+  - go test -v -race ./...
